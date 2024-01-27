@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* 다크모드 */
+[data-theme='dark'] .header {
+  color: rgb(166, 173, 187);
+  background-color: rgb(25, 29, 36)
+}
+
+[data-theme='dark'] .logo {
+  color: #fff;
+}
+
+[data-theme='dark'] .menu {
+  color: #fff;
+}
+
+[data-theme='dark'] .btn-mode:hover {
+  background: none;
+}
+
+[data-theme='dark'] .input {
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+[data-theme='dark'] .btn-cart {
+  stroke: #fff;
+}
+
+[data-theme='dark'] .dark\:stroke-current {
+  stroke: rgb(166, 173, 187);
+}
+
+/* 라이트 모드 */
+[data-theme='light'] .header {
+  color: #fff;
+  background-color: #fff;
+}
+
+[data-theme='light'] .btn-mode:hover {
+  background: none;
+}

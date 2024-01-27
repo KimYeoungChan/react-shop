@@ -1,0 +1,40 @@
+.toolTipIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.tooltip:before {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  content: var(--tw-content);
+  --tw-content: attr(data-tip);
+  max-width: 20rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  background-color: #181c21 !important ;
+  color: var(--tooltip-text-color);
+  width: max-content;
+  border: 1px solid #191d24;
+}
+
+.tooltip:after, .tooltip-top:after {
+  transform: translate(-50%);
+  border-color: #191d24 transparent transparent transparent !important;
+  top: auto;
+  left: 50%;
+  right: auto;
+  bottom: var(--tooltip-tail-offset);
+}
+
+.tooltip:after {
+  position: absolute;
+    content: "";
+    border-style: solid;
+    border-width: var(--tooltip-tail, 0);
+    width: 0;
+    height: 0;
+    display: block;
+}

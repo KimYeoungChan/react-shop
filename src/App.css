@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  min-height: calc(100vh - 4rem - 224px);
+}
+
+[data-theme='dark'] .main {
+  background-color: #2a303c;
+}
+
+[data-theme='dark'] .digital {
+  background-color: #2a303c;
+}
